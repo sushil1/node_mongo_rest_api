@@ -1,0 +1,38 @@
+{
+  "name": "nodejsMongoRestApi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev:build": "yarn run clean && webpack -w",
+    "dev": "NODE_ENV=development nodemon dist/index.bundle.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.8.1",
+    "http-status": "^1.0.1",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.11",
+    "mongoose-unique-validator": "^1.0.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "slug": "^0.9.1",
+    "validator": "^8.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "morgan": "^1.8.2",
+    "webpack": "^3.5.6",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
